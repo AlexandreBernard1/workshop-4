@@ -114,6 +114,7 @@ async function getLastReceivedMessage(userPort: number) {
 
   return lastReceivedMessage;
 }
+
 async function getLastCircuit(userPort: number) {
   const circuit = await fetch(`http://localhost:${userPort}/getLastCircuit`)
     .then((res) => res.json())
